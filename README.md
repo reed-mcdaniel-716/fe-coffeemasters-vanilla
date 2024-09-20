@@ -11,3 +11,4 @@ This repo is a companion to the [You Don't Need That Library][course] course on 
 --
 
 - to run application: `npx serve .`
+  - _forward-back buttons and refresh on any non-index route will result in 404_

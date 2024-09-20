@@ -10,8 +10,9 @@ const Router = {
       })
     })
 
-    // event handler for URL changes i.e. popstate event emitted when pressing back or forward button
+    // event handler for URL changes
     window.addEventListener("popstate", (event) => {
+      console.log("State received: ", event.state);
       // accessible from the the data arg passed to history.pushState
       // addToHistory = false becasue we are navigating the existing histor with <- and ->
       Router.go(event.state.route, false)
